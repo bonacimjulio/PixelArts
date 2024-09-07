@@ -17,6 +17,7 @@ function pesquisar() {
   let caracteristica1 = "";
   let caracteristica2 = "";
   let caracteristica3 = "";
+  let encontrouResultados = false;
   // 3. Itera sobre cada objeto no array 'dados'.
   for (let dado of dados) {
     titulo = dado.titulo.toLowerCase();
@@ -31,22 +32,26 @@ function pesquisar() {
       caracteristica3.includes(campoPesquisa)
     ) {
       // 4. Cria uma nova div para cada resultado, formatando-a como HTML.
-      resultados += `<div class="item-resultado">
-        ${dado.titulo}
+      resultados += `
+        <div class="item-resultado">
+          ${dado.titulo}
           <ul>
             <li>${dado.caracteristica1}</li>
             <li>${dado.caracteristica2}</li>
             <li>${dado.caracteristica3}</li>
             <li><a href="${dado.link}" target="_blank">Mais informações</a></li>
           </ul>
-      </div>`;
+        </div>`;
+      encontrouResultados = true;
     }
-
-    if (!resultados) {
-      resultados = "<p>Nada Encontrado!</p>";
-    }
-
-    // 5. Atribui o HTML gerado para a seção de resultados.
-    section.innerHTML = resultados;
   }
+
+  if (encontrouResultados) {
+    resultados = `<h2>Artistas de Pixel Art Destacados</h2>${resultados}`;
+  } else {
+    resultados = "<p>Nada Encontrado!</p>";
+  }
+
+  // 5. Atribui o HTML gerado para a seção de resultados.
+  section.innerHTML = resultados;
 }
