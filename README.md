@@ -18,7 +18,7 @@ Esse projeto te ajuda a encontrar artistas de pixel art incríveis! Basta digita
 
 **Como usar:**
 
-1. **pixel-arts-one.vercel.app
+1. [Pixel Arts](pixel-arts-one.vercel.app)
 
 **Contribuições:**
 
