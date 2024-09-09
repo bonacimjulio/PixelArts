@@ -79,7 +79,7 @@ section input {
     width: 30rem;
     /* Largura dos inputs */
     border: none;
-    /* Remove a borda padrão */
+    /* "NONE" Remove a borda padrão */
     padding: 1rem;
     /* Espaçamento interno */
     border-radius: 1.5rem;
@@ -119,6 +119,11 @@ section button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Adiciona uma sombra mais intensa */
 }
+
+.minha-secao {
+    border: 5px solid #003ba9da;
+    padding: 10px;
+  }
 
 .link-para-inicio a {
     text-decoration: none; /* Remove o sublinhado */
@@ -183,6 +188,15 @@ section button:hover {
     /* Cor do texto */
     margin: 0.5rem 0;
     /* Margem acima e abaixo */
+}
+
+.descricao-meta2 {
+    color: #000000;
+    /* Cor do texto */
+    margin: 0.5rem 0;
+    /* Margem acima e abaixo */
+    box-shadow: 0 2px 4px rgba(34, 89, 255, 0.286);
+    /* Sombra leve */
 }
 
 /* Estiliza o rodapé da página */
